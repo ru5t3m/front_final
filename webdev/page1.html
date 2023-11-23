@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Exam Preparation - BrainWork</title>
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="image/x-icon" href="favicon-16x16.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="favicon-16x16.png" rel="icon">
+    <link rel="stylesheet" href="page1.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+<div class="timer-container">
+    <button id="start-button" class="action_btn">Start</button>
+    <div class="timer">
+        <div id="minutes" contenteditable="true">00</div>
+        <div class="separator">:</div>
+        <div id="seconds" contenteditable="true">00</div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" style="color: white;">BrainWork</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white;" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">О нас</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="page2.html">Platforms</a></li>
+                        <li><a class="dropdown-item" href="quiz.html">Entry Quiz</a></li>
+                        <li><a class="dropdown-item" href="page1.html">Ielts</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Отзывы</a>
+                </li>
+            </ul>
+
+            <button type="button" class="btn btn-lg" style="background-color: purple; color: white" id="login-button">Войти</button>
+
+            <div id="login-form" class="form-container" style="display: none;">
+                <div class="container" style="background-color: black; padding-top: 120px">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="form-container">
+                                <h2>Registration Form</h2>
+                                <form id="registration-form">
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                                        <div id="username-error" class="error-message"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="mail" placeholder="Enter your email">
+                                        <div id="mail-error" class="error-message"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="pswd" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="pswd" placeholder="Enter your password">
+                                        <div id="pswd-error" class="error-message"></div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<section class="main-content">
+    <h1>IELTS Exam Preparation at BrainWork</h1>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="background-color: black">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://college.adelaide.edu.au/wp-content/uploads/2019/06/Copy-of-IELTS-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://crispy-pics.s3.amazonaws.com/uploads/ckeditor/pictures/308/content_How_to_Prepare_for_IELTS.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://ieltsmaterial.com/images/theme/category/ielts.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+
+    <h1>BrainWork's IELTS Preparation course. </h1>
+    <p>Our comprehensive program is designed to help you succeed in the IELTS exam and achieve your desired score.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://www.e-pik.com.tr/wp-content/uploads/2016/08/whyus.jpg" class="card-img-top" alt="Image 1" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title larger-font">Why Choose BrainWork for IELTS?</h5>
+                        <p class="card-text text-purple">Our expert instructors with years of experience provide:</p>
+                        <p class="card-text text-purple">We were preparing people to this exam since 1999 year and we have a great experience in preparation.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Interactive and engaging study materials</li>
+                            <li class="list-group-item">Regular practice tests and assessments</li>
+                            <li class="list-group-item">Flexible study schedules</li>
+                            <li class="list-group-item">Personalized feedback and support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEFeAxFhGeHxHlgtETHZeCJHvIlFPXk0rUIlQCHSTPPVbRcq0Z_mTm5liDIgYct1gN_o&usqp=CAU" class="card-img-top" alt="Image 2" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title larger-font text">About the IELTS Exam overall</h5>
+                        <p class="card-text text-purple">The International English Language Testing System (IELTS) is a globally recognized English language proficiency test.</p>
+                        <p class="card-text text-purple">The test assesses your listening, reading, writing, and speaking skills in English. It is widely used for:</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Studying abroad</li>
+                            <li class="list-group-item">Professional development</li>
+                            <li class="list-group-item">Immigration purposes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div style="text-align: center; background-color: black; margin-bottom: 30px">
+    <form id="my-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <span id="name-error" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="email-error" class="error"></span>
+
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+
+<div class="quiz-container">
+    <h2>Categorize Letters</h2>
+    <div class="categories">
+        <div class="category" id="vowels">
+            <h3>Vowels</h3>
+        </div>
+        <div class="category" id="consonants">
+            <h3>Consonants</h3>
+        </div>
+    </div>
+    <div class="quiz-items">
+        <div class="quiz-item" draggable="true" data-answer="vowel">A</div>
+        <div class="quiz-item" draggable="true" data-answer="vowel">E</div>
+        <div class="quiz-item" draggable="true" data-answer="consonant">B</div>
+        <div class="quiz-item" draggable="true" data-answer="vowel">O</div>
+    </div>
+</div>
+
+<div id="correct-answer-counter">Correct Answers: 0</div>
+
+<button id="popoverButton" type="button" class="btn btn-primary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="You must be registered">
+    Complain
+</button>
+
+<footer>
+    <p>&copy; 2023 BrainWork</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const startButton = document.getElementById("start-button");
+        startButton.addEventListener("click", startTimer);
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const loginButton = document.getElementById("login-button");
+        const loginForm = document.getElementById("login-form");
+
+        loginButton.addEventListener("click", function() {
+            loginForm.style.display = "block";
+        });
+
+        document.addEventListener("click", function(event) {
+            if (event.target !== loginForm && event.target !== loginButton) {
+                loginForm.style.display = "none";
+            }
+        });
+
+        loginForm.addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+
+        const registrationForm = document.getElementById("registration-form");
+
+        registrationForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username");
+            const mail = document.getElementById("mail");
+            const pswd = document.getElementById("pswd");
+
+            const usernameError = document.getElementById("username-error");
+            const mailError = document.getElementById("mail-error");
+            const pswdError = document.getElementById("pswd-error");
+
+            usernameError.textContent = "";
+            mailError.textContent = "";
+            pswdError.textContent = "";
+
+            if (username.value.trim() === "") {
+                usernameError.textContent = "Please enter a username";
+            }
+
+            if (mail.value.trim() === "") {
+                mailError.textContent = "Please enter your email";
+            } else if (!validateEmail(email.value.trim())) {
+                mailError.textContent = "Enter a valid email address";
+            }
+
+            if (pswd.value.trim() === "") {
+                pswdError.textContent = "Please enter a password";
+            }
+
+            if (
+                username.value.trim() !== "" &&
+                mail.value.trim() !== "" &&
+                pswd.value.trim() !== "" &&
+                validateEmail(mail.value.trim())
+            ) {
+                alert("Registration successful!");
+                loginForm.style.display = "none";
+                registrationForm.reset();
+            } else {
+                alert("Please fill in all required fields correctly.");
+            }
+        });
+    });
+
+    function validateEmail(email) {
+        const re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+
+</script>
+</body>
+</html>
